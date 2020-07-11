@@ -1,0 +1,21 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+//swapping two bits of a byte using c programs//
+#include <stdio.h>
+int main()
+{
+    char A;
+    unsigned char data=0*A;
+    unsigned char bit_1=(data>>1)&1;
+    unsigned char bit_2=(data>>2)&1;
+    unsigned char xor_of_bit=bit_1^bit_2;
+    printf("after swapping the bit ,data value is :%2X",data^(xor_of_bit<<1|xor_of_bit<<2));
+    return 0;
+}
+
